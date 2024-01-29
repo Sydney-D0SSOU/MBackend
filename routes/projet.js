@@ -7,7 +7,7 @@ const adauth =  require('../middlewares/authadmin')
 
  
 router.post('/create',auth,upload,projetCtrl.createprojet);
-router.get('/all',auth,projetCtrl.getallprojet);
+router.get('/all',projetCtrl.getallprojet);
 router.get('/all1',adauth,projetCtrl.getallprojet1);
 router.get ('/oneuser/:id',projetCtrl.getoneprojet);
 router.get ('/one/:id',projetCtrl.getoneprojet);

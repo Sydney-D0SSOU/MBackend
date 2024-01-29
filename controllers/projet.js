@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 
 const fs = require('fs');
-const { request } = require('../server');
+const { request } = require('..');
 const { log } = require('console');
 const { isObjectIdOrHexString } = require('mongoose');
 exports.createprojet = (async(req, res, next) => {
