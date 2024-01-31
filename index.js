@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 
 const path = require('path');
 const app = express() ;
-const port = 3004 ;
+const port = process.env.PORT || 3004 ; 
 app.use(express.json());
 mongoose.set('strictQuery', true);
 app.listen(port, () => {
